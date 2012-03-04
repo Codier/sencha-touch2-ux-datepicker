@@ -1,0 +1,158 @@
+/*
+ * Originally written by Ondrej Jirman <megous@megous.com>
+ *
+ * Rewritten into SASS/Compass by Codier, 2012
+ */
+/* line 9, ../sass/datepicker.scss */
+.ux-date-picker {
+  color: #3F4E5E;
+  background-color: #EEE;
+  width: 100%;
+}
+/* line 16, ../sass/datepicker.scss */
+.ux-date-picker table {
+  width: 100%;
+  position: relative;
+  border-collapse: separate;
+  table-layout: fixed;
+  font-size: 20px;
+}
+/* line 25, ../sass/datepicker.scss */
+.ux-date-picker tbody td {
+  border-bottom: 1px solid #a3a7af;
+  border-right: 1px solid #a3a7af;
+  border-top: 1px solid white;
+}
+/* line 29, ../sass/datepicker.scss */
+.ux-date-picker tbody td:last-child {
+  border-right: 0px;
+}
+/* line 35, ../sass/datepicker.scss */
+.ux-date-picker td {
+  font-weight: bold;
+  height: 43px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8d7db), color-stop(100%, #d3d2d7));
+  background-image: -webkit-linear-gradient(#d8d7db, #d3d2d7);
+  background-image: -moz-linear-gradient(#d8d7db, #d3d2d7);
+  background-image: -o-linear-gradient(#d8d7db, #d3d2d7);
+  background-image: -ms-linear-gradient(#d8d7db, #d3d2d7);
+  background-image: linear-gradient(#d8d7db, #d3d2d7);
+  text-shadow: white 1px 1px 1px;
+}
+/* line 44, ../sass/datepicker.scss */
+.ux-date-picker td.weekend {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c8c7cd), color-stop(100%, #c3c2c9));
+  background-image: -webkit-linear-gradient(#c8c7cd, #c3c2c9);
+  background-image: -moz-linear-gradient(#c8c7cd, #c3c2c9);
+  background-image: -o-linear-gradient(#c8c7cd, #c3c2c9);
+  background-image: -ms-linear-gradient(#c8c7cd, #c3c2c9);
+  background-image: linear-gradient(#c8c7cd, #c3c2c9);
+}
+/* line 48, ../sass/datepicker.scss */
+.ux-date-picker td.today {
+  color: white;
+  text-shadow: #333333 1px 1px 2px;
+  border: 1px solid black;
+  background: #7188a8;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #44566f), color-stop(10%, #7188a8), color-stop(90%, #7188a8), color-stop(100%, #b0bdcf));
+  background-image: -webkit-linear-gradient(#44566f, #7188a8 10%, #7188a8 90%, #b0bdcf);
+  background-image: -moz-linear-gradient(#44566f, #7188a8 10%, #7188a8 90%, #b0bdcf);
+  background-image: -o-linear-gradient(#44566f, #7188a8 10%, #7188a8 90%, #b0bdcf);
+  background-image: -ms-linear-gradient(#44566f, #7188a8 10%, #7188a8 90%, #b0bdcf);
+  background-image: linear-gradient(#44566f, #7188a8 10%, #7188a8 90%, #b0bdcf);
+}
+/* line 57, ../sass/datepicker.scss */
+.ux-date-picker td.unselectable {
+  color: #89909A;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cda3a8), color-stop(100%, #c89fa5));
+  background-image: -webkit-linear-gradient(#cda3a8, #c89fa5);
+  background-image: -moz-linear-gradient(#cda3a8, #c89fa5);
+  background-image: -o-linear-gradient(#cda3a8, #c89fa5);
+  background-image: -ms-linear-gradient(#cda3a8, #c89fa5);
+  background-image: linear-gradient(#cda3a8, #c89fa5);
+}
+/* line 62, ../sass/datepicker.scss */
+.ux-date-picker td.selected {
+  color: white;
+  text-shadow: #333333 1px 1px 2px;
+  border: 1px solid black;
+  background: #1980e5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #4699eb), color-stop(51%, #1980e5), color-stop(100%, #1466b7));
+  background-image: -webkit-linear-gradient(#4699eb 50%, #1980e5 51%, #1466b7);
+  background-image: -moz-linear-gradient(#4699eb 50%, #1980e5 51%, #1466b7);
+  background-image: -o-linear-gradient(#4699eb 50%, #1980e5 51%, #1466b7);
+  background-image: -ms-linear-gradient(#4699eb 50%, #1980e5 51%, #1466b7);
+  background-image: linear-gradient(#4699eb 50%, #1980e5 51%, #1466b7);
+}
+/* line 71, ../sass/datepicker.scss */
+.ux-date-picker td.today.selected {
+  color: white;
+  text-shadow: #333333 1px 1px 2px;
+  border: 1px solid black;
+  background: #1980e5;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0f4d89), color-stop(10%, #1980e5), color-stop(90%, #1980e5), color-stop(100%, #74b3f0));
+  background-image: -webkit-linear-gradient(#0f4d89, #1980e5 10%, #1980e5 90%, #74b3f0);
+  background-image: -moz-linear-gradient(#0f4d89, #1980e5 10%, #1980e5 90%, #74b3f0);
+  background-image: -o-linear-gradient(#0f4d89, #1980e5 10%, #1980e5 90%, #74b3f0);
+  background-image: -ms-linear-gradient(#0f4d89, #1980e5 10%, #1980e5 90%, #74b3f0);
+  background-image: linear-gradient(#0f4d89, #1980e5 10%, #1980e5 90%, #74b3f0);
+}
+/* line 80, ../sass/datepicker.scss */
+.ux-date-picker td.prevmonth, .ux-date-picker td.nextmonth {
+  color: #89909A;
+}
+/* line 85, ../sass/datepicker.scss */
+.ux-date-picker thead {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f5f5f5), color-stop(100%, #cfcfd3));
+  background-image: -webkit-linear-gradient(#f5f5f5, #cfcfd3);
+  background-image: -moz-linear-gradient(#f5f5f5, #cfcfd3);
+  background-image: -o-linear-gradient(#f5f5f5, #cfcfd3);
+  background-image: -ms-linear-gradient(#f5f5f5, #cfcfd3);
+  background-image: linear-gradient(#f5f5f5, #cfcfd3);
+}
+/* line 88, ../sass/datepicker.scss */
+.ux-date-picker thead th {
+  font-size: 9px;
+  vertical-align: bottom;
+  padding-bottom: 3px;
+  color: #3F4E5E;
+  text-align: center;
+  height: 46px;
+  text-shadow: white 1px 1px 1px;
+}
+/* line 97, ../sass/datepicker.scss */
+.ux-date-picker thead th.goto-prevmonth {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGASURBVCiRjZJLLwNRGIa/74zaoe5sJKQLkaBFCP8CEwuJWAh2XdvZSqRF41YSCzGRNiQlQtA07qJdo4qqzqhpm9LYSZnPoknTypS+6/c5z8l5DxIR5JJXOdylEC3m5dDNv771Te8euHrLy0o/2V9NORztOL10X46NT4yub2xXEABkM2hu7u6n9p3HvGB3VBIRICKgGiCHo+3+Z3Fhcsaql0IyQ8YBAgAAASLLADTee7/ZeXTOC3ZHlaIQMMZlHIaISSASjbU9BSWreW6lOSiFOEAGv7pJgDHI8/oeTScXnv41+1aVQgQcp9IEAEoZEAGRJfX/bILIAIkIYu/xVn9AslqWVvXii6yuAICRwT4R05bWPPiDJtfZFW9z7FWr/YDhAV5Mf6WErq7GqNUWrLU0NcxblgV9SI5k2FJXUonm4Slocp15+M2dw5RtqL9bzLZ0QldbYyzWFgmGxvrZuRWbQY7EuL8M6cl/DEgm56m7p0Rb+J0LAAAAb/GPzkTia/4HzDmqG5kl7tAAAAAASUVORK5CYII=') center center no-repeat;
+  cursor: pointer;
+}
+/* line 102, ../sass/datepicker.scss */
+.ux-date-picker thead th.goto-nextmonth {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGSSURBVCiRjZLPK8NxGMffz/P5TqHMjJkZZlwdCIu4+HEQyY+0tHJQyI/U2oUclBIHF/Ev4OCb2lwU5SDMNEwRKSd99521JFxozUF+ti1PvU9Pr+f9PO8e3CnBcyWo1sZiMfxHoqzcNuk9PnFkajOshhz9NoAokhTHAKzJHsPE9PzQ3qHvUA2FbUkBAkBEUNQQOydmKtZkt/vy+mYZgCY+QAwWAiwkEAusypu5UzMLwwe+E68aClfHAQjMEpjFlxQ1zK6p2QrZs+W+urld+unGxJ8OvwVirKx7jNNzi8NH/oD3PhypBADR1dPr9AcutMyMeHp6fuGd3f28lBRNe3paqkkiYggWyYIBE4GIASJIxPSxQoIqyDdGxwf7zqwW85Bel+mXiOIDRAR7R0uwoc4ml1oLXQDeAEAiYvCflUxGQ3R8wHFmKTSNZGfpfD97vxyICN1tzcGGuiq5tPh76h+AwSzBaNBHR/vtp9Yi85hepz1KdJNEzOhsbVSa6qs3SixmF4DXJIEB6n3kNPLwWPPf934HADqrsf6uhWgAAAAASUVORK5CYII=') center center no-repeat;
+  cursor: pointer;
+}
+/* line 107, ../sass/datepicker.scss */
+.ux-date-picker thead th.goto-prevyear {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGASURBVCiRjZJLLwNRGIa/74zaoe5sJKQLkaBFCP8CEwuJWAh2XdvZSqRF41YSCzGRNiQlQtA07qJdo4qqzqhpm9LYSZnPoknTypS+6/c5z8l5DxIR5JJXOdylEC3m5dDNv771Te8euHrLy0o/2V9NORztOL10X46NT4yub2xXEABkM2hu7u6n9p3HvGB3VBIRICKgGiCHo+3+Z3Fhcsaql0IyQ8YBAgAAASLLADTee7/ZeXTOC3ZHlaIQMMZlHIaISSASjbU9BSWreW6lOSiFOEAGv7pJgDHI8/oeTScXnv41+1aVQgQcp9IEAEoZEAGRJfX/bILIAIkIYu/xVn9AslqWVvXii6yuAICRwT4R05bWPPiDJtfZFW9z7FWr/YDhAV5Mf6WErq7GqNUWrLU0NcxblgV9SI5k2FJXUonm4Slocp15+M2dw5RtqL9bzLZ0QldbYyzWFgmGxvrZuRWbQY7EuL8M6cl/DEgm56m7p0Rb+J0LAAAAb/GPzkTia/4HzDmqG5kl7tAAAAAASUVORK5CYII=') center center no-repeat;
+  cursor: pointer;
+}
+/* line 112, ../sass/datepicker.scss */
+.ux-date-picker thead th.goto-nextyear {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAQCAYAAAAiYZ4HAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAN1wAADdcBQiibeAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGSSURBVCiRjZLPK8NxGMffz/P5TqHMjJkZZlwdCIu4+HEQyY+0tHJQyI/U2oUclBIHF/Ev4OCb2lwU5SDMNEwRKSd99521JFxozUF+ti1PvU9Pr+f9PO8e3CnBcyWo1sZiMfxHoqzcNuk9PnFkajOshhz9NoAokhTHAKzJHsPE9PzQ3qHvUA2FbUkBAkBEUNQQOydmKtZkt/vy+mYZgCY+QAwWAiwkEAusypu5UzMLwwe+E68aClfHAQjMEpjFlxQ1zK6p2QrZs+W+urld+unGxJ8OvwVirKx7jNNzi8NH/oD3PhypBADR1dPr9AcutMyMeHp6fuGd3f28lBRNe3paqkkiYggWyYIBE4GIASJIxPSxQoIqyDdGxwf7zqwW85Bel+mXiOIDRAR7R0uwoc4ml1oLXQDeAEAiYvCflUxGQ3R8wHFmKTSNZGfpfD97vxyICN1tzcGGuiq5tPh76h+AwSzBaNBHR/vtp9Yi85hepz1KdJNEzOhsbVSa6qs3SixmF4DXJIEB6n3kNPLwWPPf934HADqrsf6uhWgAAAAASUVORK5CYII=') center center no-repeat;
+  cursor: pointer;
+}
+/* line 117, ../sass/datepicker.scss */
+.ux-date-picker thead th .month-year-label {
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  left: 30%;
+  position: absolute;
+  text-align: center;
+  top: 6px;
+  width: 40%;
+  z-index: 999;
+  text-shadow: white 1px 1px 1px;
+}
