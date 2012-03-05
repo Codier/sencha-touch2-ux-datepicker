@@ -105,12 +105,12 @@
       }
       
       &.goto-prevyear {
-        background: inline-image("larr.png") center center no-repeat;
+        background: inline-image("dlarr.png") center center no-repeat;
         cursor: pointer;
       }
 
       &.goto-nextyear {
-        background: inline-image("rarr.png") center center no-repeat;
+        background: inline-image("drarr.png") center center no-repeat;
         cursor: pointer;
       }
 
