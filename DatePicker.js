@@ -83,15 +83,14 @@ Ext.define('Ext.ux.DatePicker', {
     this.refresh();
   },
 
-  refresh: function() {
-    var me = this;
-		var d = me.getValue() || new Date();
-		me.element.setHtml(me.generateCalendar(d.getMonth(), d.getFullYear()));
-
-		me.setToday();
-		if (me.getValue()) {
-			me.setSelected(me.getValue());
-		}
+	refresh : function() {
+		var me = this;
+		setTimeout(function() {
+			var v = me.getValue(), d = v || new Date();
+			me.element.setHtml(me.generateCalendar(d.getMonth(), d.getFullYear()));
+			me.setToday();
+			v && me.setSelected(v);
+		}, 0);
 	},
 	
 	generateCalendar: function(month, year) {
