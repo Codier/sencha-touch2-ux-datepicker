@@ -2,7 +2,7 @@
  * An alternate iCal Style date picker
  */
 Ext.define('Ext.ux.DatePicker', {
-  extend: 'Ext.Panel',
+  extend: 'Ext.field.Field',
   xtype: 'uxdatepicker',
   days: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
   months: ['January', 'February', 'March', 'April', 'May', 'June',
@@ -12,7 +12,8 @@ Ext.define('Ext.ux.DatePicker', {
     cls: 'ux-date-picker',
     value: new Date(),
     minDate: null,
-    maxDate: null
+    maxDate: null,
+    name: 'uxdatepicker'
   },
 
   initialize: function() {
@@ -24,7 +25,7 @@ Ext.define('Ext.ux.DatePicker', {
         var target = Ext.get(targetDom);
         if (!target.hasCls('unselectable')) {
           var newDate = me.getCellDate(target);
-  				me.setValue(newDate);
+    			me.setValue(newDate);
   				me.fireEvent('change', me, newDate);
   			}
       },
